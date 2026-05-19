@@ -30,6 +30,20 @@ public class two_d_input_output {
             System.out.println();
         }
     }
+
+    public static boolean search (int arr[][], int target){
+        
+        for (int i = 0; i < arr.length; i ++){
+            for (int j = 0; j < arr[0].length; j++){
+                if (arr[i][j]== target){
+                System.out.println(target +" found at index : "+i+","+j);
+                return true;   
+                }
+            }
+        }
+        System.out.println(target + " not found");
+        return false;
+    }
     
     public static void main(String[] args) {
         
@@ -46,6 +60,9 @@ public class two_d_input_output {
         
         // for output
         print_2d (matrix);
+
+        // search
+        search (matrix, 0);
         
     }
 }
