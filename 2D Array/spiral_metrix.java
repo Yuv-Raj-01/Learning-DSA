@@ -19,11 +19,13 @@ class spiral_metrix{
             
             // print bottom
             for (int j = ec - 1; j >= sc; j--){
+                if (sr == er) break;
                 System.out.print(arr[er][j]+" ");
             }
             
             // print left
             for (int i = er -1; i >= sr + 1; i--){
+                if (sc == ec) break;
                 System.out.print(arr[i][sc]+" ");
             }
             
